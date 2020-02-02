@@ -22,20 +22,124 @@
 <!-- main content -->
     <main class="main">
       <form action="index.html" method="post">
-        <fieldset>
+        <!-- contact info section -->
+        <fieldset class="contact-info">
           <legend>Contact Information</legend>
 
-        </fieldset>
-        <fieldset>
-          <legend>Newsletter</legend>
+          <label for="name">Full Name</label>
+          <input type="text" name="name" id="name" required>
+
+          <label for="email">Email Address</label>
+          <input type="email" name="email" id="email" required>
+
+          <label for="phone">Phone Number</label>
+          <input type="tel" name="phone" id="phone">
+
+          <label for="street">Street Address</label>
+          <input type="text" name="street" id="street">
+
+          <label for="city">City</label>
+          <input type="text" name="city" id="city">
+
+          <label for="state">State</label>
+          <select name="state" id="state">
+            <!-- snippet from https://www.freeformatter.com/usa-state-list-html-select.html to avoid having to figure out the spelling and posibly missing one.-->
+            <option value="AL">Alabama</option>
+            <option value="AK">Alaska</option>
+            <option value="AZ">Arizona</option>
+            <option value="AR">Arkansas</option>
+            <option value="CA">California</option>
+            <option value="CO">Colorado</option>
+            <option value="CT">Connecticut</option>
+            <option value="DE">Delaware</option>
+            <option value="DC">District Of Columbia</option>
+            <option value="FL">Florida</option>
+            <option value="GA">Georgia</option>
+            <option value="HI">Hawaii</option>
+            <option value="ID">Idaho</option>
+            <option value="IL">Illinois</option>
+            <option value="IN">Indiana</option>
+            <option value="IA">Iowa</option>
+            <option value="KS">Kansas</option>
+            <option value="KY">Kentucky</option>
+            <option value="LA">Louisiana</option>
+            <option value="ME">Maine</option>
+            <option value="MD">Maryland</option>
+            <option value="MA">Massachusetts</option>
+            <option value="MI">Michigan</option>
+            <option value="MN">Minnesota</option>
+            <option value="MS">Mississippi</option>
+            <option value="MO">Missouri</option>
+            <option value="MT">Montana</option>
+            <option value="NE">Nebraska</option>
+            <option value="NV">Nevada</option>
+            <option value="NH">New Hampshire</option>
+            <option value="NJ">New Jersey</option>
+            <option value="NM">New Mexico</option>
+            <option value="NY">New York</option>
+            <option value="NC">North Carolina</option>
+            <option value="ND">North Dakota</option>
+            <option value="OH">Ohio</option>
+            <option value="OK">Oklahoma</option>
+            <option value="OR">Oregon</option>
+            <option value="PA">Pennsylvania</option>
+            <option value="RI">Rhode Island</option>
+            <option value="SC">South Carolina</option>
+            <option value="SD">South Dakota</option>
+            <option value="TN">Tennessee</option>
+            <option value="TX">Texas</option>
+            <option value="UT">Utah</option>
+            <option value="VT">Vermont</option>
+            <option value="VA">Virginia</option>
+            <option value="WA">Washington</option>
+            <option value="WV">West Virginia</option>
+            <option value="WI">Wisconsin</option>
+            <option value="WY">Wyoming</option>
+            <option value="AS">American Samoa</option>
+            <option value="GU">Guam</option>
+            <option value="MP">Northern Mariana Islands</option>
+            <option value="PR">Puerto Rico</option>
+            <option value="UM">United States Minor Outlying Islands</option>
+            <option value="VI">Virgin Islands</option>
+            <option value="nil">Other/Not Listed</option>
+          </select>
+
+          <label for="zip">Zip Code</label>
+          <input type="number" name="zip" id="zip">
 
         </fieldset>
+
+        <!-- newsletter section -->
+        <fieldsetc class="newsletter">
+          <legend>Newsletter</legend>
+
+          <label>Select the newsletters you would like to recive</label>
+          <label for="html">HTML News</label>
+          <input type="checkbox" name="html" id="html">
+
+          <label for="css">CSS News</label>
+          <input type="checkbox" name="css" id="css">
+
+          <label for="java">Javascript News</label>
+          <input type="checkbox" name="java" id="java">
+
+          <label>Newsletter format</label>
+          <label for="html-form">HTML</label>
+          <input type="radio" name="format" id="html-form">
+          <label for="plain-text-form">Pain text</label>
+          <input type="radio" name="format" id="plain-text-form">
+
+          <label for="other-topic">Other topics you'd like to hear about</label>
+          <textarea name="other-topic" id="other-topic" cols="30" rows="5">
+          </textarea>
+        </fieldset>
+        <button type="submit">Sign Up</button>
       </form>
     </main>
 
 <!-- main-footer -->
     <footer class="main-footer">
-
+      <span>Copyright The Code Review</span>
     </footer>
   </div>
 </body>
