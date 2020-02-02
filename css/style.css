@@ -1,0 +1,8 @@
+@font-face {
+  font-family: 'Merriweather', serif;
+  src: url('https://fonts.googleapis.com/css?family=Merriweather:400,900&display=swap');
+}
+
+* {
+  font-family: 'Merriweather', serif;
+}
