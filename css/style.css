@@ -78,6 +78,11 @@ input[type="number"] {
   width: 50%;
 }
 
+input:focus {
+  border: #173647 2px solid;
+  transition-duration: 100ms;
+}
+
 .tag-line {
   margin-bottom: 2em;
 }
@@ -116,6 +121,14 @@ input[type="number"] {
 
 #bottom-spacer-div {
   margin: .5em 0 1em 0;
+}
+
+button {
+  width: 100%;
+  padding: 1em;
+  border-radius: 5px;
+  background: #2e8b74;
+  color: white;
 }
 
 /* media queries */
