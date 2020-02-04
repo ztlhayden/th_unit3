@@ -1,20 +1,55 @@
-@font-face {
-  font-family: 'Merriweather', serif;
-  src: url('https://fonts.googleapis.com/css?family=Merriweather:400,900&display=swap');
-}
-
+/* Base box sizing and font */
 * {
-  font-family: 'Merriweather', serif;
+  font-family: 'Montserrat', sans-serif;
   box-sizing: border-box;
 }
 
+
+/* Element Style */
+
 h1 {
   background: #173647;
+  margin-top: 0;
+  padding: 1em;
+  font-size: 1.6em;
+}
+
+h1,
+h2,
+p {
+  text-align: center;
+}
+
+h2,
+legend{
+  color: #173647;
+  font-weight: bold;
+}
+
+p,
+label {
+  color: #8497a1;
+}
+
+legend {
+  margin: 1em 0 1em 0;
+}
+
+label,
+legend {
+  font-size: 1.1em;
 }
 
 h1,
 button {
   color: white;
+}
+
+fieldset {
+  border: none;
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 input[type="text"],
@@ -27,21 +62,60 @@ textarea {
   border: none;
   border-radius: 5px;
   background: #dddddd;
+  padding: .6em;
+  margin: .4em 0 .9em;
 }
 
-/* layout containers */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+  width: 100%;
+}
+
+input[type="number"] {
+  width: 50%;
+}
+
+.tag-line {
+  margin-bottom: 2em;
+}
 
 .layout-center {
-  margin: 2px auto;
+  margin: 0 auto;
   width: 93%;
 }
 
-.bottom-border {
-  border-bottom: solid 4px #173647;
+.top-border {
+  border-top: solid 4px #173647;
 }
 
-.top-border {
-  border-top: solid 2px #173647;
+.bottom-border {
+  border-bottom: solid 2px #173647;
+}
+
+.button-label {
+  margin: .5em 0;
+  display: block;
+}
+
+.newsletter input {
+  margin: .5em 0;
+}
+
+.newsletter input:nth-of-type(3),
+.newsletter input:nth-of-type(5) {
+  margin-bottom: 1.3em;
+}
+
+#top-spacer-div {
+  height: 8px;
+  margin: 1em 0 1em 0;
+}
+
+#bottom-spacer-div {
+  margin: .5em 0 1em 0;
 }
 
 /* media queries */

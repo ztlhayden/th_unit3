@@ -7,6 +7,7 @@
   <title>The Code Review - Sign Up</title>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
 </head>
 <body>
   <div class="container">
@@ -19,11 +20,15 @@
 <!-- main content -->
     <main class="main layout-center">
       <h2 class="center">Sign up for our newsletter</h2>
-      <p class="center bottom-border">Get the latest news on how your code is doing right in your inbox</p>
+      <p class="tag-line center">Get the latest news on how your code is doing right in your inbox</p>
+      
+      <div id="top-spacer-div" class="top-border bottom-border">
+        <!-- empty div to draw the lines. Is this a good practice? Going with it.. -->
+      </div>
 
       <form action="index.html" method="post">
         <!-- contact info section -->
-        <div class="top-border">
+        <div class="">
           <fieldset class="contact-info">
             <legend>Contact Information</legend>
 
@@ -44,7 +49,7 @@
 
             <label for="state">State</label>
             <select name="state" id="state">
-              <!-- snippet from https://www.freeformatter.com/usa-state-list-html-select.html to avoid having to figure out the spelling and posibly missing one.-->
+              <!-- snippet from https://www.freeformatter.com/usa-state-list-html-select.html to avoid having to figure out the spelling and posibly missing one. I enjoy how this list makes up half the code...-->
               <option value="AL">Alabama</option>
               <option value="AK">Alaska</option>
               <option value="AZ">Arizona</option>
@@ -110,12 +115,15 @@
           </fieldset>
         </div>
 
+        <div id="bottom-spacer-div" class="bottom-border">
+        <!-- opps I did it again, I made an empty div.   -->
+        </div>
         <!-- newsletter section -->
-        <div class="top-border">
+        <div>
           <fieldset class="newsletter">
             <legend>Newsletter</legend>
 
-            <label class="button-label">Select the newsletters you would like to recive</label><br>
+            <label class="button-label">Select the newsletters you would like to recive</label>
             
             <input type="checkbox" name="html" id="html">
             <label for="html">HTML News</label><br>
@@ -127,8 +135,10 @@
             <label for="java">Javascript News</label><br>
 
             <label class="button-label">Newsletter format</label>
+            
             <input type="radio" name="format" id="html-form">
             <label for="html-form">HTML</label><br>
+            
             <input type="radio" name="format" id="plain-text-form">
             <label for="plain-text-form">Pain text</label><br>
 
@@ -145,7 +155,7 @@
 
 <!-- main-footer -->
     <footer class="main-footer center">
-      <span>Copyright The Code Review</span>
+      <p id="copy">Copyright The Code Review</p>
     </footer>
   </div>
 </body>
