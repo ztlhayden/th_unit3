@@ -12,6 +12,7 @@
 h1 {
   background: #173647;
   padding: 1em;
+  margin-top: 0;
 }
 
 h1,
@@ -30,6 +31,11 @@ h2,
 legend {
   color: #173647;
   padding: .8em 0;
+}
+
+p {
+  margin-top: -.5em;
+  padding-bottom: 1.3em;
 }
 
 fieldset {
@@ -66,6 +72,16 @@ button {
 
 .button-label {
   display: block;
+  margin: .8em 0;
+}
+
+.other-label {
+  display: block;
+  margin-top: 0.8em;
+}
+
+.main-footer span {
+  font-size: .7em;
 }
 
 /* layout containers */
@@ -77,10 +93,12 @@ button {
 
 .bottom-border {
   border-bottom: solid 4px #173647;
+  margin-bottom: -.8em
 }
 
 .top-border {
   border-top: solid 2px #173647;
+  margin-top: 1em;
 }
 
 /* media queries */
