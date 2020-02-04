@@ -1,0 +1,104 @@
+@font-face {
+  font-family: 'Merriweather', serif;
+  src: url('https://fonts.googleapis.com/css?family=Merriweather:400,900&display=swap');
+}
+
+* {
+  font-family: 'Merriweather', serif;
+  box-sizing: border-box;
+  color: #91aab8;
+}
+
+h1 {
+  background: #173647;
+  padding: 1em;
+  margin-top: 0;
+}
+
+h1,
+button {
+  color: white;
+}
+
+h1,
+h2,
+legend,
+button {
+  font-size: 1.25em;
+}
+
+h2,
+legend {
+  color: #173647;
+  padding: .8em 0;
+}
+
+p {
+  margin-top: -.5em;
+  padding-bottom: 1.3em;
+}
+
+fieldset {
+  border: none;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="number"],
+textarea,
+select,
+button {
+  display: block;
+  background: #dddddd;
+  border: none;
+  border-radius: 5px;
+  padding: .75em;
+  width: 100%;
+  margin: .5em 0 .5em 0;
+}
+
+button {
+  margin-top: 1em;
+  background: #16aa91;
+}
+
+.center {
+  text-align: center;
+}
+
+.button-label {
+  display: block;
+  margin: .8em 0;
+}
+
+.other-label {
+  display: block;
+  margin-top: 0.8em;
+}
+
+.main-footer span {
+  font-size: .7em;
+}
+
+/* layout containers */
+
+.layout-center {
+  margin: 2px auto;
+  width: 93%;
+}
+
+.bottom-border {
+  border-bottom: solid 4px #173647;
+  margin-bottom: -.8em
+}
+
+.top-border {
+  border-top: solid 2px #173647;
+  margin-top: 1em;
+}
+
+/* media queries */
