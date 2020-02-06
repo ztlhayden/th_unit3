@@ -171,6 +171,25 @@ button:active {
 
 /* media queries */
 
-@media (min-width: 768px) {
-  
+@media only screen and (min-width: 768px) {
+
+  .layout-center {
+    width: 55%;
+  }
+
+  .contact-info {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  select {
+  }
+
+  .contact-info label {
+    display: inline;
+  }
+
 }
