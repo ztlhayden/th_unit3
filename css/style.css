@@ -101,7 +101,7 @@ input:invalid:not(:focus):not(:placeholder-shown) {
 
 .invalid {
   color: red;
-  margin: -.5em 0 1em;
+  margin: -.8em 0 1em;
   display: none;
 }
 
@@ -110,7 +110,7 @@ input:invalid:not(:focus):not(:placeholder-shown) + .invalid {
 }
 
 #copy {
-  padding-bottom: 50%;
+  padding-bottom: 40%;
 }
 
 .tag-line {
@@ -174,22 +174,36 @@ button:active {
 @media only screen and (min-width: 768px) {
 
   .layout-center {
-    width: 55%;
+    width: 60%;
   }
 
-  .contact-info {
+  .contact-flexbox {
     display: flex;
-    flex-direction: row-reverse;
+    flex-wrap: wrap;
   }
 
   input[type="text"],
   input[type="email"],
   input[type="tel"],
   select {
+    width: 65%;
   }
 
   .contact-info label {
-    display: inline;
+    width: 30%;
+    padding-top: 1em;
+    margin-right: auto;
+  }
+
+  input[type="number"] {
+    width: 40%;
+    margin-right: 25%;
+  }
+
+  .invalid {
+    width: 90%;
+    text-align: center;
+    margin-left: auto;
   }
 
 }
