@@ -122,7 +122,7 @@ input:invalid:not(:focus):not(:placeholder-shown) + .invalid {
 }
 
 .second-background,
-.second-background * {
+.second-background *:not(textarea) {
   background-color: #173647;
   color: white;
 }
