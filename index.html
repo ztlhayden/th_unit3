@@ -33,23 +33,26 @@
             <legend>Contact Information</legend>
 
             <label for="name">Full Name</label>
-            <input type="text" name="name" id="name" required>
+            <input type="text" name="name" id="name" required placeholder="Required" pattern="[a-zA-z]{2,}">
+            <div class="invalid"><span>Please enter your name</span></div>
 
             <label for="email">Email Address</label>
-            <input type="email" name="email" id="email" required>
+            <input type="email" name="email" id="email" required placeholder="Required">
+            <div class="invalid"><span>Please enter your email</span></div>
 
             <label for="phone">Phone Number</label>
-            <input type="tel" name="phone" id="phone">
+            <input type="tel" name="phone" id="phone" placeholder="Optional">
 
             <label for="street">Street Address</label>
-            <input type="text" name="street" id="street">
+            <input type="text" name="street" id="street" placeholder="Optional">
 
             <label for="city">City</label>
-            <input type="text" name="city" id="city">
+            <input type="text" name="city" id="city" placeholder="Optional">
 
             <label for="state">State</label>
-            <select name="state" id="state">
+            <select name="state" id="state" placeholder="Select One">
               <!-- snippet from https://www.freeformatter.com/usa-state-list-html-select.html to avoid having to figure out the spelling and posibly missing one. I enjoy how this list makes up half the code...-->
+              <option value="" disabled selected>Select One</option>
               <option value="AL">Alabama</option>
               <option value="AK">Alaska</option>
               <option value="AZ">Arizona</option>
@@ -111,7 +114,7 @@
             </select>
 
             <label for="zip">Zip Code</label>
-            <input type="number" name="zip" id="zip">
+            <input type="number" name="zip" id="zip" placeholder="Optional">
           </fieldset>
         </div>
 
@@ -136,7 +139,7 @@
 
             <label class="button-label">Newsletter format</label>
             
-            <input type="radio" name="format" id="html-form">
+            <input type="radio" name="format" id="html-form" required>
             <label for="html-form">HTML</label><br>
             
             <input type="radio" name="format" id="plain-text-form">

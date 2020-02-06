@@ -2,6 +2,7 @@
 * {
   font-family: 'Montserrat', sans-serif;
   box-sizing: border-box;
+  background: #fafeff;
 }
 
 
@@ -28,7 +29,7 @@ legend{
 
 p,
 label {
-  color: #8497a1;
+  color: #778992;
 }
 
 legend {
@@ -50,6 +51,10 @@ fieldset {
   width: 100%;
   margin: 0;
   padding: 0;
+}
+
+:placeholder-shown {
+  text-align: right;
 }
 
 input[type="text"],
@@ -78,9 +83,34 @@ input[type="number"] {
   width: 50%;
 }
 
-input:focus {
+select {
+  height: 37.2px;
+}
+
+input:focus,
+textarea:focus,
+select:focus,
+button:focus {
   border: #173647 2px solid;
-  transition-duration: 100ms;
+  transition: 200ms ease 20ms all;
+}
+
+input:invalid:not(:focus):not(:placeholder-shown) {
+  background-color: rgba(255, 125, 125, 0.336);
+}
+
+.invalid {
+  color: red;
+  margin: -.5em 0 1em;
+  display: none;
+}
+
+input:invalid:not(:focus):not(:placeholder-shown) + .invalid {
+  display: block;
+}
+
+#copy {
+  padding-bottom: 50%;
 }
 
 .tag-line {
@@ -131,4 +161,16 @@ button {
   color: white;
 }
 
+button:focus {
+  border-color: #8f8f8f;
+}
+
+button:active {
+  color: #579182;
+}
+
 /* media queries */
+
+@media (min-width: 768px) {
+  
+}
