@@ -95,6 +95,10 @@ button:focus {
   transition: 200ms ease 20ms all;
 }
 
+select:focus {
+  border-color: white;
+}
+
 input:invalid:not(:focus):not(:placeholder-shown) {
   background-color: rgba(255, 125, 125, 0.336);
 }
@@ -111,6 +115,20 @@ input:invalid:not(:focus):not(:placeholder-shown) + .invalid {
 
 #copy {
   padding-bottom: 40%;
+}
+
+.second-background {
+  padding: .7em;
+}
+
+.second-background,
+.second-background * {
+  background-color: #173647;
+  color: white;
+}
+
+.second-background legend {
+  padding: .5em;
 }
 
 .tag-line {
@@ -159,6 +177,7 @@ button {
   border-radius: 5px;
   background: #2e8b74;
   color: white;
+  margin-top: .5em;
 }
 
 button:focus {
